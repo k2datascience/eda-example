@@ -55,7 +55,7 @@ Example:
 
 Simple Weighted Equation
 
-![Tech Factor](images/tech_factor.jpg)
+![Tech Factor](images/tech_factor.png)
 
 ## Final Recommendations
 
