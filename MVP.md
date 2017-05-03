@@ -2,7 +2,7 @@
 
 ## Goals
 
-A non-profit organization is trying to raise awareness about women in technology. We need to identify the best areas to canvas. The organization will be placing street teams at the enxtrances to various subway stations.
+A non-profit organization is trying to raise awareness about women in technology. We need to identify the best areas to canvas. The organization will be placing street teams at the entrances to various subway stations.
 
 ## Initial Data Cleaning Approach and Exploratory Findings
 
