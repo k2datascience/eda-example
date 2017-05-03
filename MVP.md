@@ -22,7 +22,7 @@ There is strong variability on stations by the time of the day.
 
 ![Time of Day Variability](images/day_var.jpg)
 
-## Intial Research Findings
+## Initial Research Findings
 
 1. **Time of Day** - People are more receptive to talking and listening to new ideas depending on the time of day. During the morning and evening rush hour, people are concerned with getting to work or getting back to their family. Off-shoulder times such as mid-to-late afternoon when people are in a more relaxed mood has shown to be better.
 2. **Audience Matters** - The type of person you talk to can greatly vary the outcome of a canvassing project. Finding open-minded people is not easy. Preliminary research suggests college students are the most receptive to new ideas and ready to ask questions. Though, whether they follow through and engage with the non-profit is another story.
