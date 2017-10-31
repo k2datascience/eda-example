@@ -1,74 +1,33 @@
-# Open-Ended Project
+# Open-Ended Project MVP
 
 ## Goals
 
 A non-profit organization is trying to raise awareness about women in technology. We need to identify the best areas to canvas. The organization will be placing street teams at the enxtrances to various subway stations.
 
-## Assumptions
+## Initial Data Cleaning Approach and Exploratory Findings
 
-List any assumptions you made in your analysis.
+I examined the turnstile data available on the MTA website. The turnstile data only provided the cumulative number of entries and exits, not the net amount for any particular time period. I used a Python loop function to go through the data and calculate the net entries for each period.
 
-Examples:
-- Combined 2 different Union Square stops
-- Exclude Commuter Hubs (ie. Penn Station / GCT-Bryant Park)
+The MTA collected most of its turnstile data at regular, four-hour intervals of midnight, 4am, 8am, etc. However, there were many instances where the data was an hour off of the regular schedule, and some observation times were seemingly random. To help with my time analysis, I rounded all time periods to the nearest hour, and eliminated the small proportion of data that far removed from the regular schedule.
 
-## Approach
+After cleaning the data, I was able to further narrow my station targets to 15, based on the total traffic for the month of December 2016.
 
-Explain your analysis about how you found the best stations. High-level research details.
+![Top Stations Graph](images/top15.jpg)
 
-Example:
-- Highest Foot Traffic
-- Tech Factor
-- Gender %
-- Income
-- Universities
+There is variability on stations by the day of the week.
 
-Zip Codes with Median Income > $70k
+![Day of Week Variability](images/weekly_var.jpg)
 
-![Income](images/income.png)
+There is strong variability on stations by the time of the day.
 
-Student Audience
+![Time of Day Variability](images/day_var.jpg)
 
-![Universities](images/universities.png)
+## Intial Research Findings
 
-Startup Locality
+1. **Time of Day** - People are more receptive to talking and listening to new ideas depending on the time of day. During the morning and evening rush hour, people are concerned with getting to work or getting back to their family. Off-shoulder times such as mid-to-late afternoon when people are in a more relaxed mood has shown to be better.
+2. **Audience Matters** - The type of person you talk to can greatly vary the outcome of a canvassing project. Finding open-minded people is not easy. Preliminary research suggests college students are the most receptive to new ideas and ready to ask questions. Though, whether they follow through and engage with the non-profit is another story.
 
-![Startups](images/startups.png)
+## Further Research and Analysis
 
-## Cleaning the Data
-
-Walkthrough how you cleaned the data and what issues you ran into. Mention any steps you took to exclude erroneous or outlier data.
-
-Example:
-- Some four-hour intervals were an hour off regular schedule
-- There were some negative values
-- There were some extremely high values
-
-## Finding Target Stations
-
-How did you go about filtering to find your list.
-
-Example:
-- Combine Approach with Assumptions to an Analytical Explanation
-- Weighted average of different components
-- Any mathematical formulas or equations
-
-Simple Weighted Equation
-
-![Tech Factor](images/tech_factor.png)
-
-## Final Recommendations
-
-Here are the recommendations for the non-profit organization. Which stations, what days/times and why?
-
-## Lessons Learned
-
-Personal reflection on what you learned about Python, the Domain (NYC Subway system and canvassing), as well as Exploratory Data Analysis.
-
-## Further Analysis
-
-If you had more time or more data, what interesting questions would you like to explore. Gives random visitors some ideas if they want to expand on your project.
-
-## Code Information
-
-Steps explaining how to reproduce results. Which notebooks or Python scripts to run.
+1. Income, Volunteerism and Charitable Giving
+2. Technology Hubs
